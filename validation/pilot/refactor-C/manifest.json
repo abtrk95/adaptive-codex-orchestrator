@@ -1,0 +1,17 @@
+{
+  "allowed_changes": [
+    "fee.py",
+    "retail.py",
+    "wholesale.py"
+  ],
+  "fixture": "refactor",
+  "initial_sha256": {
+    "SENTINEL.txt": "583da850c75896915a4179290698468275aa63a95107316ef4728fcc798e1d83",
+    "TASK.md": "741ffc63aa069cbd44af15e43ec41aa9069778c711d6275a141224d21e21fd21",
+    "fee.py": "9990a0bc5155920e76ae0408cb93cc77a53e50d1c06cc26570f6b45040f8e38a",
+    "retail.py": "95acd74c06ef599a5ea2ab364baec9fec6eb9780309b583c40614832e90add5b",
+    "test_public.py": "1bc13dc6873d96b06a9a2ce0034fb9dca8ab288fa5925f2573c7c2df05237621",
+    "wholesale.py": "44ae01125b2cf75c761a3f46a22c4f6ff49298c63f101f234b17ea140c59f350"
+  },
+  "version": 1
+}

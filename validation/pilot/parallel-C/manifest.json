@@ -1,0 +1,18 @@
+{
+  "allowed_changes": [
+    "binary_adapter.py",
+    "decimal_adapter.py",
+    "hex_adapter.py"
+  ],
+  "fixture": "parallel",
+  "initial_sha256": {
+    "SENTINEL.txt": "583da850c75896915a4179290698468275aa63a95107316ef4728fcc798e1d83",
+    "TASK.md": "b3ff05cdbe7eb7486833c09f6c79a7a335830e5933ef977b29bf36898dfdacaa",
+    "binary_adapter.py": "69f7b27b43c0065c5224af24c248b6f5b153506f5e190f1b963336cf49c9ce71",
+    "decimal_adapter.py": "69f7b27b43c0065c5224af24c248b6f5b153506f5e190f1b963336cf49c9ce71",
+    "dispatcher.py": "9747921ee21c6c28e81f973c604842e52b0c892819d375eec1edd9d52f582b96",
+    "hex_adapter.py": "69f7b27b43c0065c5224af24c248b6f5b153506f5e190f1b963336cf49c9ce71",
+    "test_public.py": "735fde8e9eb57bbc6f164ac8f813259a131da02191a196167908857b00d494ad"
+  },
+  "version": 1
+}

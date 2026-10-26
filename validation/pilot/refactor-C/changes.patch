@@ -1,0 +1,24 @@
+--- a/retail.py
++++ b/retail.py
+@@ -1,2 +1,5 @@
++import fee
++
++
+ def charge(amount):
+-    return round(amount * 0.1, 2)
++    return fee.fee(amount, 0.1)
+--- a/wholesale.py
++++ b/wholesale.py
+@@ -1,2 +1,5 @@
++import fee
++
++
+ def charge(amount):
+-    return round(amount * 0.05, 2)
++    return fee.fee(amount, 0.05)
+--- a/fee.py
++++ b/fee.py
+@@ -1 +1,2 @@
+-# Implement shared fee calculation here.
++def fee(amount, rate):
++    return round(amount * rate, 2)

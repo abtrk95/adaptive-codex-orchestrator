@@ -1,0 +1,4 @@
+interface:
+  display_name: "Adaptive Codex Orchestrator"
+  short_description: "Adaptive native-agent coordination with verified results"
+  default_prompt: "Use $adaptive-codex-orchestrator to complete this task with appropriate native delegation and verified results."

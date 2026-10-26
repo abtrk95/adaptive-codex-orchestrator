@@ -1,0 +1,16 @@
+{
+  "allowed_changes": [
+    "schema.py",
+    "service.py"
+  ],
+  "fixture": "dependency",
+  "initial_sha256": {
+    "SENTINEL.txt": "583da850c75896915a4179290698468275aa63a95107316ef4728fcc798e1d83",
+    "TASK.md": "33fbdb56774537689762bb98183370181b7b252cdc5be470ce06c54439c5c86c",
+    "api.py": "358694c6c9125748b11550dddbbdeaaf9d5c4f17d7b8997a1183c72d3e754bf9",
+    "schema.py": "46ba656e2a0083e9fabf789ca6f7a59072c62591eccc2ce2ea77ab75227d7ab6",
+    "service.py": "75789a211fc5fcda3b081be3f3fd9d550b338601e843cf456246093b669054e7",
+    "test_public.py": "cb949ef16aae3512e5cd056f7092912626d58a5f7876dd049f4fe697f7bb1cca"
+  },
+  "version": 1
+}

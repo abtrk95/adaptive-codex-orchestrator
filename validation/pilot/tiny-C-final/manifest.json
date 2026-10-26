@@ -1,0 +1,13 @@
+{
+  "allowed_changes": [
+    "range_sum.py"
+  ],
+  "fixture": "tiny",
+  "initial_sha256": {
+    "SENTINEL.txt": "583da850c75896915a4179290698468275aa63a95107316ef4728fcc798e1d83",
+    "TASK.md": "1e3cefd5ba3c9b1b9561a069a0b3da30e18ba4cc6989870f85e8dceedb9cacd5",
+    "range_sum.py": "a43abaeb6d6e60f233bbac0b84d7c97a4dc770b13ae9442e4ade887ed3276e52",
+    "test_public.py": "12ea6400e54aeb152cffb826d12353249560c8804c280fd6fc76f14a04884f74"
+  },
+  "version": 1
+}

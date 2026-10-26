@@ -1,0 +1,11 @@
+{
+  "fixture": "dependency",
+  "status": "pass",
+  "integrity": "pass",
+  "functional": "pass",
+  "returncode": 0,
+  "checks_completed": true,
+  "elapsed_seconds": 0.03209399500019572,
+  "stdout": "",
+  "stderr": ""
+}

@@ -1,0 +1,44 @@
+[
+  {
+    "pass": 1,
+    "purpose": "Research-derived architecture",
+    "finding": "An accountable coordinator with direct execution, bounded workers, dependency-aware fan-out and external verification fits native capabilities.",
+    "change": "Kept an instruction-only design; no runtime, scheduler, API client or framework dependency.",
+    "evidence": "Primary-source research and architecture-v1 design record."
+  },
+  {
+    "pass": 2,
+    "purpose": "Critical architecture review",
+    "finding": "Unconditional fan-out, vague ownership, inflated context, and treating messages as cancellation would create unnecessary or unsafe work.",
+    "change": "Made usefulness and actual host authority explicit; required a checkable contract and one owner per mutable resource.",
+    "evidence": "Independent architecture review; issue dispositions incorporated before implementation."
+  },
+  {
+    "pass": 3,
+    "purpose": "Adversarial scenario review",
+    "finding": "Twelve conceptual scenarios exposed dirty-workspace integration, unresolved writer state, ambiguity and hard-budget edge cases.",
+    "change": "Added provisional interfaces, selective evidence invalidation, blocked-path handling and honest partial completion.",
+    "evidence": "Scenario decision table; conceptual review only."
+  },
+  {
+    "pass": 4,
+    "purpose": "Optimization",
+    "finding": "Role ceremony, mandatory ledgers, recursive teams and universal complexity scores did not justify their overhead.",
+    "change": "Reduced core loop; made ledgers optional, roles situational, and retry/dispatch accounting cumulative.",
+    "evidence": "Ten explicit optimized design decisions."
+  },
+  {
+    "pass": 5,
+    "purpose": "Implementation review",
+    "finding": "Ambiguous quantity validation, overstrong writer guarantees and unclear grader integrity semantics could mislead evaluation or users.",
+    "change": "Clarified the dependency fixture before its run; restricted completion to known task writers; separated active/open-thread limits and syntax/runtime validation.",
+    "evidence": "Independent implementation review, official skill validator, TOML parsing, evaluator tests."
+  },
+  {
+    "pass": 6,
+    "purpose": "Final quality gate",
+    "finding": "No concrete release blocker in the frozen skill; real pilot results support only narrow behavior. The grader needed completion evidence beyond exit 0.",
+    "change": "Added and tested a post-check completion receipt; independently graded all six final runs; reported unmeasured dimensions without a synthetic score.",
+    "evidence": "12 evaluator unit tests; four baseline/reference pairs; six parent-graded native runs; final read-only review."
+  }
+]

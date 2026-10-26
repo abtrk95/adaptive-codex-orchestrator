@@ -1,0 +1,13 @@
+{
+  "date": "2026-10-26",
+  "skill_tree_sha256": "581cb9bc1f13e4a330161f153fded7f6062003e951ebd8627de6d37fcd404e50",
+  "main_words": 1241,
+  "local_cli_version": "0.159.2",
+  "live_worker_model_requested": "gpt-6.1-terra",
+  "local_custom_profile_execution": "not tested",
+  "live_capacity": "4 active agents including primary",
+  "local_documented_capacity": "configured open spawned threads, excluding primary",
+  "tokens_and_cost": "unavailable",
+  "format_validator": "passed",
+  "relative_links": "passed"
+}

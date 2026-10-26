@@ -1,0 +1,128 @@
+[
+  {
+    "trial_id": "tiny-A",
+    "coordinator_agent": "/root/pilot_tiny_a",
+    "worker_agents": [],
+    "task_control_summary": "Direct control instruction; no candidate skill.",
+    "task_public_test": "Coordinator reported exit 0",
+    "native_completion": "Coordinator completion notification observed",
+    "parent_grader": {
+      "fixture": "tiny",
+      "status": "pass",
+      "integrity": "pass",
+      "functional": "pass",
+      "returncode": 0,
+      "checks_completed": true,
+      "elapsed_seconds": 0.032043588000306045,
+      "stdout": "",
+      "stderr": ""
+    },
+    "evidence_limit": "Curated observations and final artifacts; complete raw native event export and exact initial control prompts were not retained."
+  },
+  {
+    "trial_id": "tiny-B",
+    "coordinator_agent": "/root/pilot_tiny_b",
+    "worker_agents": [
+      "/root/pilot_tiny_b/behavior_inspection",
+      "/root/pilot_tiny_b/boundary_inspection"
+    ],
+    "task_control_summary": "Fixed two read-only Terra workers; coordinator edits the shared file.",
+    "task_public_test": "Coordinator reported exit 0",
+    "native_completion": "Coordinator completion notification observed",
+    "parent_grader": {
+      "fixture": "tiny",
+      "status": "pass",
+      "integrity": "pass",
+      "functional": "pass",
+      "returncode": 0,
+      "checks_completed": true,
+      "elapsed_seconds": 0.04053930100008074,
+      "stdout": "",
+      "stderr": ""
+    },
+    "evidence_limit": "Curated observations and final artifacts; complete raw native event export and exact initial control prompts were not retained."
+  },
+  {
+    "trial_id": "tiny-C-final",
+    "coordinator_agent": "/root/pilot_tiny_c_final",
+    "worker_agents": [],
+    "task_control_summary": "Final frozen skill; coordinator chose direct execution.",
+    "task_public_test": "Coordinator reported exit 0",
+    "native_completion": "Coordinator completion notification observed",
+    "parent_grader": {
+      "fixture": "tiny",
+      "status": "pass",
+      "integrity": "pass",
+      "functional": "pass",
+      "returncode": 0,
+      "checks_completed": true,
+      "elapsed_seconds": 0.03740905999984534,
+      "stdout": "",
+      "stderr": ""
+    },
+    "evidence_limit": "Curated observations and final artifacts; complete raw native event export and exact initial control prompts were not retained."
+  },
+  {
+    "trial_id": "parallel-C",
+    "coordinator_agent": "/root/pilot_parallel_c",
+    "worker_agents": [
+      "/root/pilot_parallel_c/decimal_adapter",
+      "/root/pilot_parallel_c/hex_adapter"
+    ],
+    "task_control_summary": "Final skill; trial explicitly requested native workers for the independent adapters. Two Terra workers owned one file each; coordinator owned the third and integration.",
+    "task_public_test": "Coordinator reported exit 0",
+    "native_completion": "Coordinator completion notification observed",
+    "parent_grader": {
+      "fixture": "parallel",
+      "status": "pass",
+      "integrity": "pass",
+      "functional": "pass",
+      "returncode": 0,
+      "checks_completed": true,
+      "elapsed_seconds": 0.039132869000241044,
+      "stdout": "",
+      "stderr": ""
+    },
+    "evidence_limit": "Curated observations and final artifacts; complete raw native event export and exact initial control prompts were not retained."
+  },
+  {
+    "trial_id": "dependency-C-v2",
+    "coordinator_agent": "/root/pilot_dependency_c",
+    "worker_agents": [],
+    "task_control_summary": "Final skill; coordinator chose direct execution for the small coupled pipeline. Quantity contract clarified before trial.",
+    "task_public_test": "Coordinator reported exit 0",
+    "native_completion": "Coordinator completion notification observed",
+    "parent_grader": {
+      "fixture": "dependency",
+      "status": "pass",
+      "integrity": "pass",
+      "functional": "pass",
+      "returncode": 0,
+      "checks_completed": true,
+      "elapsed_seconds": 0.03209399500019572,
+      "stdout": "",
+      "stderr": ""
+    },
+    "evidence_limit": "Curated observations and final artifacts; complete raw native event export and exact initial control prompts were not retained."
+  },
+  {
+    "trial_id": "refactor-C",
+    "coordinator_agent": "/root/pilot_refactor_c",
+    "worker_agents": [],
+    "task_control_summary": "Final skill; coordinator chose direct execution for the small coupled extraction.",
+    "task_public_test": "Coordinator reported exit 0",
+    "native_completion": "Coordinator completion notification observed",
+    "parent_grader": {
+      "fixture": "refactor",
+      "status": "pass",
+      "integrity": "pass",
+      "functional": "pass",
+      "returncode": 0,
+      "checks_completed": true,
+      "elapsed_seconds": 0.05396108000013555,
+      "stdout": "",
+      "stderr": ""
+    },
+    "evidence_limit": "Curated observations and final artifacts; complete raw native event export and exact initial control prompts were not retained."
+  }
+]

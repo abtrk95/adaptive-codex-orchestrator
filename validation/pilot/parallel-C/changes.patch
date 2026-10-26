@@ -1,0 +1,30 @@
+--- a/decimal_adapter.py
++++ b/decimal_adapter.py
+@@ -1,2 +1,6 @@
+ def parse(item):
+-    return 0
++    value = item["value"].strip()
++    digits = value[1:] if value.startswith("-") else value
++    if not digits or any(char < "0" or char > "9" for char in digits):
++        raise ValueError("invalid decimal value")
++    return int(value)
+--- a/hex_adapter.py
++++ b/hex_adapter.py
+@@ -1,2 +1,6 @@
+ def parse(item):
+-    return 0
++    value = item['value'].strip()
++    digits = value[1:] if value.startswith('-') else value
++    if not digits or any(char not in '0123456789abcdefABCDEF' for char in digits):
++        raise ValueError('invalid hexadecimal value')
++    return int(value, 16)
+--- a/binary_adapter.py
++++ b/binary_adapter.py
+@@ -1,2 +1,6 @@
+ def parse(item):
+-    return 0
++    value = item["value"].strip()
++    digits = value[1:] if value.startswith("-") else value
++    if not digits or any(digit not in "01" for digit in digits):
++        raise ValueError("Invalid binary value")
++    return int(value, 2)

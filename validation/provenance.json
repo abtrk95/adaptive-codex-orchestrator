@@ -1,0 +1,25 @@
+{
+  "date": "2026-10-26",
+  "purpose": "Development smoke validation, not a confirmatory performance benchmark",
+  "primary_runs": 6,
+  "fixture_hash_algorithm": "SHA-256 of initial manifest JSON with sorted keys and compact separators; manifest includes SHA-256 for all initial files.",
+  "prompt_hash_algorithm": "SHA-256 of protected TASK.md bytes, common across A/B/C tiny runs.",
+  "skill_hash_algorithm": "For sorted relative file paths in the skill tree: update SHA-256 with path UTF-8 bytes + NUL + file bytes + NUL.",
+  "arm_instruction_hashes": "Not retained; null. Summaries are not verbatim control prompts.",
+  "root_model": "All trial roots used inherited model selection in this hosted session; no root model override. Runtime model build and backend attestation unavailable.",
+  "worker_model": "Native spawn requests explicitly selected gpt-6.1-terra for the four B/parallel-C workers and were accepted. Not a backend attestation.",
+  "isolation": "Fresh agent contexts and separate workspace directories on a shared filesystem. No enforced OS isolation from siblings or hidden tests.",
+  "order": "Development order; not randomized, balanced, or blinded.",
+  "pilot_deviations": [
+    "Parallel C explicitly requested native workers, so it tests execution and integration, not autonomous choice to parallelize.",
+    "Dependency task wording corrected before its scored trial; original ambiguous directory was not run/scored.",
+    "Preliminary tiny C smoke run passed before the final frozen-skill rerun; excluded from primary six-run table, retained as development history.",
+    "No tokens, billing, comparable end-to-end timing, complete event export, enforced total resource budget or measured peak concurrency."
+  ],
+  "grader_timing": "elapsed_seconds is only the post-trial hidden-check subprocess time; it is not agent or task latency.",
+  "nonclaims": [
+    "No estimate of relative speed, cost, success probability, scalability or production reliability.",
+    "Grader results do not establish hostile-code security, full requirement coverage or resource-limit compliance.",
+    "No executed worker-failure injection, cancellation race, recovery-loop or destructive-operation tests."
+  ]
+}

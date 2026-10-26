@@ -1,0 +1,6 @@
+--- a/range_sum.py
++++ b/range_sum.py
+@@ -1,2 +1,2 @@
+ def range_sum(start, end):
+-    return sum(range(start, end))
++    return sum(range(start, end + 1))
